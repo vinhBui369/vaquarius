@@ -1,0 +1,19 @@
+@function m576($size) {
+    @return ($size/576 * 100vw);
+}
+
+@function m375($size) {
+    @return ($size/375 * 100vw);
+}
+
+@function mb768($size) {
+    @return ($size/768 * 100vw);
+}
+
+@function mb($size) {
+    @return ($size/1024 * 100vw);
+}
+
+@function p($size) {
+    @return ($size/1440 * 100vw);
+}

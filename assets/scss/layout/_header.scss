@@ -1,0 +1,35 @@
+#header-main {
+    position: fixed;
+    top: p(36);
+    width: 100%;
+    z-index: 99;
+    transition: .3s ease-in-out;
+
+    .logo {
+        width: p(185.465);
+
+        .box-img {
+            @include aspect-ratio(185.465, 32);
+        }
+
+        @include mediaMaxWidth(768px) {
+            width: mb768(185.465);
+        }
+
+        @include mediaMaxWidth(767px) {
+            width: m375(185.465);
+            margin: 0 auto;
+        }
+
+    }
+
+    @include mediaMaxWidth(767px) {
+        top: m375(48);
+    }
+
+    .tw-button {
+        @include mediaMaxWidth(768px) {
+            display: none;
+        }
+    }
+}

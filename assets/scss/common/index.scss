@@ -1,0 +1,35 @@
+/* common.scss */
+body {
+    font-family: Mallory;
+    font-style: normal;
+    font-weight: 400;
+    color: #fff;
+    font-size: p(12);
+    line-height: p(20);
+    letter-spacing: p(-0.24);
+
+    @include mediaMaxWidth(768px) {
+        font-size: mb768(12);
+        line-height: mb768(20);
+        letter-spacing: mb768(-0.24);
+    }
+
+    @include mediaMaxWidth(767px) {
+        font-size: m375(12);
+        line-height: m375(20);
+        letter-spacing: m375(-0.24);
+    }
+}
+
+::-webkit-scrollbar {
+    width: 0
+}
+
+/* common.scss */
+
+@import "title";
+@import "class-flex";
+@import 'tw-container';
+@import 'tw-button';
+@import 'scroll-down';
+@import 'animation';

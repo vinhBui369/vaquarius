@@ -1,0 +1,212 @@
+.tw-heading {
+    font-family: "Canela";
+    color: #000;
+    font-style: normal;
+    font-weight: 400;
+
+
+    &.heading1 {
+        font-size: p(48);
+        line-height: p(48);
+
+        @include mediaMaxWidth(768px) {
+            font-size: mb768(48);
+            line-height: mb768(48);
+        }
+
+        @include mediaMaxWidth(767px) {
+            font-size: m375(40);
+            line-height: m375(40);
+        }
+    }
+
+    &.heading2 {
+        font-size: p(40);
+        line-height: p(50);
+
+        @include mediaMaxWidth(768px) {
+            font-size: mb768(40);
+            line-height: mb768(50);
+        }
+
+        @include mediaMaxWidth(767px) {
+            font-size: m375(30);
+            line-height: m375(40);
+        }
+    }
+
+    &.heading3 {
+        font-size: p(32);
+        line-height: p(32);
+    }
+
+    &.heading4 {
+        font-size: p(24);
+        line-height: p(28.8);
+
+        @include mediaMaxWidth(768px) {
+            font-size: mb768(24);
+            line-height: mb768(28.8);
+        }
+
+        @include mediaMaxWidth(767px) {
+            font-size: m375(24);
+            line-height: m375(28.8);
+        }
+    }
+
+    &.heading5 {
+        font-size: p(20);
+        line-height: p(20);
+    }
+
+    &.heading6 {
+        font-size: p(16);
+        line-height: p(16);
+    }
+
+    &.heading7 {
+        font-size: p(14);
+        line-height: p(14);
+
+    }
+
+    &.heading8 {
+        font-size: p(12);
+        line-height: p(12);
+
+    }
+}
+
+.tw-display {
+    color: #000;
+    font-family: Canela;
+    font-style: normal;
+    font-weight: 400;
+
+    &.display1 {
+        font-size: p(76);
+        line-height: p(76);
+    }
+
+    &.display2 {
+        font-size: p(60);
+        line-height: p(60);
+
+        @include mediaMaxWidth(767px) {
+            font-size: m375(45);
+            line-height: m375(45)
+        }
+    }
+}
+
+.tw-sub {
+    color: #000;
+    font-family: Mallory;
+    font-style: normal;
+    font-weight: 400;
+
+    &.sub1 {
+        font-size: p(32);
+        line-height: p(32);
+        letter-spacing: p(-0.64);
+    }
+
+    &.sub2 {
+        font-size: p(24);
+        line-height: p(24);
+        letter-spacing: p(-0.48);
+
+        @include mediaMaxWidth(767px) {
+            font-size: m375(18);
+            line-height: m375(18);
+            letter-spacing: m375(-0.36);
+        }
+    }
+
+    &.sub3 {
+        font-size: p(20);
+        line-height: p(20);
+        letter-spacing: p(-0.4);
+    }
+
+    &.sub4 {
+        font-size: p(16);
+        line-height: p(16);
+        letter-spacing: p(-0.32);
+
+        @include mediaMaxWidth(768px) {
+            font-size: mb768(16);
+            line-height: mb768(16);
+            letter-spacing: mb768(-0.32);
+        }
+
+        @include mediaMaxWidth(767px) {
+            font-size: m375(12);
+            line-height: m375(12);
+            letter-spacing: m375(-0.32);
+        }
+    }
+
+    &.sub5 {
+        font-size: p(14);
+        line-height: p(14);
+        letter-spacing: p(-0.28);
+    }
+
+    &.sub6 {
+        font-size: p(12);
+        line-height: p(12);
+        letter-spacing: p(-0.24);
+    }
+}
+
+.tw-text {
+    color: #000;
+    font-family: Mallory;
+    font-style: normal;
+    font-weight: 400;
+
+    &.text1 {
+        font-size: p(32);
+        line-height: p(48);
+        letter-spacing: p(-0.64);
+    }
+
+    &.text2 {
+        font-size: p(24);
+        line-height: p(40);
+        letter-spacing: p(-0.48);
+    }
+
+    &.text3 {
+        font-size: p(20);
+        line-height: p(36);
+        letter-spacing: p(-0.4);
+    }
+
+    &.text4 {
+        font-size: p(16);
+        line-height: p(28);
+        letter-spacing: p(-0.32);
+    }
+
+    &.text5 {
+        font-size: p(14);
+        line-height: p(24);
+        letter-spacing: p(-0.28);
+    }
+
+    &.text6 {
+        font-size: p(14);
+        line-height: p(24);
+        letter-spacing: p(-0.28);
+    }
+}
+
+.tw-title-bg {
+    background: url('assets/images/background-title.png'), lightgray 50% / cover no-repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

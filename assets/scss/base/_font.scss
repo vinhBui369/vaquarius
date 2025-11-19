@@ -1,0 +1,88 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+//                    | Value |	  Common weight name
+//                    --------------------------------
+//                    |  100  |	  Thin (Hairline)
+//                    --------------------------------
+//                    |  200  |	  Extra Light (Ultra Light)
+//                    --------------------------------
+//                    |  300  |	  Light
+//                    --------------------------------
+//                    |  400  |	  Normal (Regular)
+//                    --------------------------------
+//                    |  500  |	  Medium
+//                    --------------------------------
+//                    |  600  |	  Semi Bold (Demi Bold)
+//                    --------------------------------
+//                    |  700  |	  Bold
+//                    --------------------------------
+//                    |  800  |	  Extra Bold (Ultra Bold)
+//                    --------------------------------
+//                    |  900  |	  Black (Heavy)
+//                    --------------------------------
+@import '../abstracts/variables';
+$mallorys: (
+    "Mallory-Thin.ttf": (100, normal),
+    "Mallory-XLight.ttf": (200, normal),
+    "Mallory-Light.ttf": (350, normal),
+    "Mallory-Book.ttf": (400, normal),
+    "Mallory-Medium.ttf": (500, normal),
+    // 600:none
+    "Mallory-Bold.ttf": (700, normal),
+    "Mallory-Ultra": (800, normal),
+    "Mallory-Black.ttf": (900, normal),
+    // italic
+    "Mallory-ThinItalic.ttf": (100, italic),
+    "Mallory-XLightItalic.ttf": (200, italic),
+    "Mallory-LightItalic.ttf": (350, italic),
+    "Mallory-BookItalic.ttf": (400, italic),
+    "Mallory-MediumItalic.ttf": (500, italic),
+    // 600:none
+    "Mallory-BoldItalic.ttf": (700, italic),
+    "Mallory-UltraItalic.ttf": (800, italic),
+    "Mallory-BlackItalic.ttf": (900, italic),
+);
+
+$canelas: (
+    "Canela-Thin.ttf": (100, normal),
+    "Canela-Light.ttf": (300, normal),
+    "Canela-Regular.ttf": (400, normal),
+    "Canela-Medium.ttf": (500, normal),
+    "Canela-Bold.ttf": (700, normal),
+    "Canela-Black.ttf": (900, normal),
+    // italic
+    "Canela-ThinItalic.ttf": (100, italic),
+    "Canela-LightItalic.ttf": (300, italic),
+    "Canela-RegularItalic.ttf": (400, italic),
+    "Canela-MediumItalic.ttf": (500, italic),
+    "Canela-BoldItalic.ttf": (700, italic),
+    "Canela-BlackItalic.ttf": (900, italic),
+);
+
+
+
+
+@if $canelas {
+    @each $name, $key in $canelas {
+        @font-face {
+            font-family: "Canela";
+            src: url("#{$font-url}/#{$name}") format("truetype");
+            font-weight: nth($key, 1);
+            font-style: nth($key, 2);
+            font-display: swap;
+        }
+    }
+}
+
+@if $mallorys {
+    @each $name, $key in $mallorys {
+        @font-face {
+            font-family: "Mallory";
+            src: url("#{$font-url}/#{$name}") format("opentype");
+            font-weight: nth($key, 1);
+            font-style: nth($key, 2);
+            font-display: swap;
+        }
+    }
+}

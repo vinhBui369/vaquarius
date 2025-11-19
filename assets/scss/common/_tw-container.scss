@@ -1,0 +1,8 @@
+.tw-container-vw {
+    padding: 0 p(48);
+
+
+    @include mediaMaxWidth(767px) {
+        padding: 0 m375(20);
+    }
+}

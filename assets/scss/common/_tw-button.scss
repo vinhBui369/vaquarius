@@ -1,0 +1,32 @@
+.tw-button {
+    color: #FFF;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    background: #F99D25;
+    border: 0.5px solid #F99D25;
+    @include transition(.3s);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: p(12) p(24);
+    border-radius: p(2);
+    letter-spacing: p(-0.32);
+
+    @include mediaMaxWidth(768px) {
+        padding: mb768(12) mb768(24);
+        border-radius: mb768(2);
+        letter-spacing: mb768(-0.32);
+    }
+
+    @include mediaMaxWidth(768px) {
+        padding: m375(12) m375(24);
+        border-radius: m375(2);
+        letter-spacing: m375(-0.32)
+    }
+
+    // &:hover {
+    //     color: #F99D25;
+    //     border-color: #F99D25;
+    //     background-color: #fff;
+    // }
+}
